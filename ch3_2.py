@@ -1,14 +1,14 @@
-# ±×¸®µğ
+# ê·¸ë¦¬ë””
 N, M, K = map(int, input().split(' '))
 L = list(map(int, input().split(' ')))
 
-# ³»¸²Â÷¼øÀ¸·Î Á¤·Ä
+# ë‚´ë¦¼ì°¨ìˆœìœ¼ë¡œ ì •ë ¬
 L.sort()
 L = L[::-1]
 
 answer = 0
 for m in range(M):
-    if m > 0 and m % K == 0: # K¸¸Å­ Ãâ·ÂÇßÀ»¶§ ´ÙÀ½À¸·Î Å« ¼ö °è»ê
+    if m > 0 and m % K == 0: # Kë§Œí¼ ì¶œë ¥í–ˆì„ë•Œ ë‹¤ìŒìœ¼ë¡œ í° ìˆ˜ ê³„ì‚°
         answer += L[1]
     else: answer += L[0]
 print(answer)
